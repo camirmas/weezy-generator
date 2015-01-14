@@ -1,1 +1,7 @@
-<%= @noko_doc.inspect %>
+<%= link_to "Next Song", weezy_path, class: "btn btn-primary col-xs-2 col-xs-offset-5" %>
+
+<div class="content text-center">
+  <%= raw @song.lyrics.first %>
+  <%= raw @song.lyrics[1] %>
+  <%= raw @song.lyrics.last %>
+</div>
